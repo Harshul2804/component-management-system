@@ -11,7 +11,7 @@
             <div class="navbar-header">
             <a class="navbar-brand" href="./index_timeline.php">CMS Front</a>
             </div>
-            <li><a href="registration.php">Registration</a></li>
+            <!-- <li><a href="registration.php">Registration</a></li> -->
             <li><a href="includes/logout.php">Log-out</a></li>
             <li><a href="admin/profile.php">Profile</a></li>
             <?php
