@@ -1,9 +1,18 @@
-<?php include "includes/admin_header.php"; ?>
+<?php
+if($_SESSION['user_role']=='Admin'){
+    include "includes/admin_header.php"; 
+}
+ ?>
 
     <div id="wrapper">
 
         <!-- Navigation -->
-        <?php include "includes/admin_navigation.php"; ?>
+        
+        <?php
+        if($_SESSION['user_role']=='Admin'){
+            include "includes/admin_navigation.php"; 
+        }
+         ?>
 
         <div id="page-wrapper">
 
@@ -13,8 +22,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Welcome to Admin
-                            <small>-Harshul bhaliya</small>
+                            Welcome to
+                            <small>-<?php echo $_SESSION['username']; ?></small>
                         </h1>
                         <?php
                         if(isset($_GET['source'])){
