@@ -1,10 +1,3 @@
-<?php 
-if(isset($_SESSION['user_role'])){
-    if($_SESSION['user_role']=='Admin')
-    {
-        ?>
-
-
                <div class="col-md-4">
 
                 <!-- Blog Search Well -->
@@ -91,7 +84,3 @@ login
                 <?php include "widget.php"; ?>
 
 </div>
-
-<?php
-    }
-} ?>
