@@ -14,6 +14,7 @@
             <!-- <li><a href="registration.php">Registration</a></li> -->
             <li><a href="includes/logout.php">Log-out</a></li>
             <li><a href="admin/profile.php">Profile</a></li>
+            <li><a href="./contact.php">Contact</a></li>
             <?php
             if($_SESSION['user_role']=='Admin'){
                 ?>
